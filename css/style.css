@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: flex;
+    padding-left: 5%;
+    padding-top: 3%;
+    background-color: #b1a7dfb3;
+}
+.tit {
+    padding: 2%;
+}
+h1 {
+    font-size: 2.5rem;
+    line-height: 43px;
+    padding-top: 12%;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+ul {
+    display: inline-table;
+}
+
+.list {
+    padding-left: 5%;
+    padding-top: 3%;
+    display: flex;
+}
+
+span {
+    font-size: 1.5rem;
+    margin: 3%;
+}
+
+img {
+    
+    width: 17%;
+    height: 12%;
+}
