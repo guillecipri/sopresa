@@ -1,48 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 0.4s;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+main {
+  width: 80%;
+  margin: 5em auto;
 }
 
 body {
-    font-family: 'Baloo Bhaina 2', cursive;
-    display: flex;
-    padding-left: 5%;
-    padding-top: 3%;
-    background-color: #b1a7dfb3;
+  font-family: "Baloo Bhaina 2", cursive;
+  padding-left: 5%;
+  padding-top: 3%;
+  background-color: #b1a7dfb3;
 }
-.tit {
-    padding: 2%;
+.lugar {
+  padding: 2%;
+  font-size: 1.5rem;
 }
-h1 {
-    font-size: 2.5rem;
-    line-height: 43px;
-    padding-top: 12%;
-}
-
-ul li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    font-style: italic;
-}
-ul {
-    display: inline-table;
+.pendiente {
+  font-size: 2.5rem;
+  padding-top: 2%;
 }
 
-.list {
-    padding-left: 5%;
-    padding-top: 3%;
-    display: flex;
+.quienes li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+.quienes {
+  display: inline-table;
+  list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
 
 span {
-    font-size: 1.5rem;
-    margin: 3%;
+  font-size: 1.5rem;
+  margin: 1%;
 }
 
 img {
-    
-    width: 17%;
-    height: 12%;
+  width: 10%;
+  height: 5%;
 }
