@@ -41,6 +41,20 @@ button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
+.top_secret {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  align-self: center;
+}
+
+.top_secret:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
 .nav_links {
   list-style: none;
 }
